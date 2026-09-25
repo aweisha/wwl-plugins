@@ -1,52 +1,24 @@
 {
+  "_note": "这是 wwl 官方插件索引。把它整个替换到你的 wwl-plugins 仓库根目录的 plugins.json，同时把 plugin-clock.zip 上传到仓库根目录。",
+  "_howto": [
+    "1. 上传 zip：examples/zips/plugin-clock.zip -> 仓库根目录，文件名保持 plugin-clock.zip",
+    "2. 替换索引：本文件内容 -> 仓库根目录 plugins.json",
+    "3. 在 App 商店页下拉刷新，应看到「时钟」和蓝色「官方」徽章"
+  ],
   "plugins": [
     {
-      "id": "example-a-minimal",
-      "name": "示例A：最简页面",
-      "author": "wwl 示例",
+      "id": "clock",
+      "name": "时钟",
+      "author": "aweisha",
       "version": "0.1.0",
       "minHostVersion": "0.1.0",
-      "repo": "https://github.com/example/wwl-plugin-a",
-      "description": "演示用：一个只有静态页面的最简插件，用来验证插件能不能正常打开。",
-      "category": "示例",
+      "official": true,
+      "download": "https://gh-proxy.com/https://raw.githubusercontent.com/aweisha/wwl-plugins/main/plugin-clock.zip",
+      "description": "官方示例插件：显示当前时间，并能调用 App 的能力。",
+      "category": "工具",
       "icon": "",
-      "permissions": []
-    },
-    {
-      "id": "example-b2-number",
-      "name": "示例B2：会变的数字",
-      "author": "wwl 示例",
-      "version": "0.1.0",
-      "minHostVersion": "0.1.0",
-      "repo": "https://github.com/example/wwl-plugin-b2",
-      "description": "演示用：在面板上显示一个会变化的数字，验证 B2 型小组件。",
-      "category": "示例",
-      "icon": "",
-      "permissions": []
-    },
-    {
-      "id": "example-c-action",
-      "name": "示例C：点一下弹提示",
-      "author": "wwl 示例",
-      "version": "0.1.0",
-      "minHostVersion": "0.1.0",
-      "repo": "https://github.com/example/wwl-plugin-c",
-      "description": "演示用：点击动作后弹出提示，验证 C 型动作。",
-      "category": "示例",
-      "icon": "",
-      "permissions": []
-    },
-    {
-      "id": "example-perm-network",
-      "name": "示例：需要联网权限",
-      "author": "wwl 示例",
-      "version": "0.1.0",
-      "minHostVersion": "0.1.0",
-      "repo": "https://github.com/example/wwl-plugin-perm",
-      "description": "演示用：声明 network 权限，用来验证安装时的授权提示。",
-      "category": "示例",
-      "icon": "",
-      "permissions": ["network", "storage"]
+      "repo": "https://github.com/aweisha/wwl-plugins",
+      "permissions": ["storage"]
     }
   ]
 }
