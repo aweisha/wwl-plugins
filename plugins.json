@@ -1,0 +1,38 @@
+{
+  "_note": "这是 wwl 官方插件索引。把它整个替换到你的 wwl-plugins 仓库根目录的 plugins.json，同时把对应的 zip 上传到仓库根目录。",
+  "_howto": [
+    "1. 打包：把 _src/plugin-clock/ 打成 clock.zip、_src/plugin-unit-convert/ 打成 unit-convert.zip（文件名必须等于 manifest 里的 id）",
+    "2. 上传：这两个 zip 传到仓库根目录，或作为某个 Release 的附件",
+    "3. 替换索引：本文件内容 -> 仓库根目录 plugins.json",
+    "4. 在 App 商店页下拉刷新，应看到「时钟」和「单位换算」，都带蓝色「官方」徽章",
+    "注意：2026-10-02 起 download 字段已作废 —— 下载地址由 App 按 repo 自己推导（见《插件规范》§10.3），这里不用也不该写"
+  ],
+  "plugins": [
+    {
+      "id": "clock",
+      "name": "时钟",
+      "author": "aweisha",
+      "version": "0.1.0",
+      "minHostVersion": "0.1.0",
+      "official": true,
+      "description": "官方示例插件：显示当前时间，并能调用 App 的能力。",
+      "category": "工具",
+      "icon": "",
+      "repo": "https://github.com/aweisha/wwl-plugins",
+      "permissions": ["storage"]
+    },
+    {
+      "id": "unit-convert",
+      "name": "单位换算",
+      "author": "aweisha",
+      "version": "1.0.0",
+      "minHostVersion": "0.1.0",
+      "official": true,
+      "description": "长度、重量、温度换算，支持记忆上次选择和历史记录（数据存在本机，不联网）。",
+      "category": "工具",
+      "icon": "",
+      "repo": "https://github.com/aweisha/wwl-plugins",
+      "permissions": ["storage"]
+    }
+  ]
+}
