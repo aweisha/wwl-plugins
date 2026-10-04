@@ -1,0 +1,24 @@
+{
+  "_note": "wwl 插件索引：本仓库提供以下插件。App 只读 plugins 数组，_note / _howto 会被忽略。",
+  "_howto": [
+    "改插件：源码在插件自己的目录里，用 wwl 打包工具打成 <插件id>.zip（文件名必须等于 manifest.json 里的 id）",
+    "发新版：zip 传到 Release 附件（推荐，只有附件才统计下载量）或仓库根目录，然后更新本文件里的 version / updatedAt / sha256",
+    "每次发 Release 要把本仓库所有插件的 zip 一起传，漏传哪个用户就装不上哪个"
+  ],
+  "plugins": [
+          {
+      "id": "steam-info",
+      "name": "Steam 特卖助手",
+      "author": "aweisha",
+      "version": "2.0.1",
+      "minHostVersion": "0.3.0",
+      "description": "查 Steam 游戏与促销：搜索、促销、热销三个页签，面板上还有一块特卖倒计时。非官方工具，与 Valve 无关。",
+      "category": "工具",
+      "updatedAt": "2026-10-04",
+      "icon": "",
+      "repo": "https://github.com/aweisha/wwl-plugins",
+      "permissions": ["network", "storage"],
+      "sha256": "47a9399ca5fa6fd6043fe81b3f900fa4c5aa5312ada318294f64fcf5cfc6b0cc"
+    }
+  ]
+}
